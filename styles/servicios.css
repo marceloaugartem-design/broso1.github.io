@@ -1,0 +1,16 @@
+
+
+.carousel-img {
+  border-radius: 10px;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-img:hover {
+  transform: scale(1.1);
+}
+
+.carousel p {
+  margin-top: 8px;
+  font-weight: 500;
+}

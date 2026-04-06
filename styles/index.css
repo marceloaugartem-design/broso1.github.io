@@ -1,0 +1,185 @@
+.video-cafe {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.video-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*IMAGENES*/
+/* Contenedor de la galería */
+.Galeria .row {
+    margin-top: 20px;
+}
+
+/* Imágenes de la galería */
+.Galeria img {
+    width: 100%;           /* Ocupa todo el ancho de la columna */
+    height: 250px;         /* Altura uniforme */
+    object-fit: cover;     /* Recorta sin deformar */
+    border-radius: 10px;   /* Bordes suaves */
+    margin-bottom: 20px;   /* Espacio entre filas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover */
+.Galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+
+/* Animación */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.fade-in:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+h3 {
+  margin-bottom: 15px;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+
+img {
+  transition: transform 0.3s ease;
+  width: 300px;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+
+
+.video-box {
+  aspect-ratio: 16/9;
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carrusel2 {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+.elemento {
+  flex: 1 0 auto;
+  margin: 0 50px;
+  width: 500px;
+  height: 500px;
+} 
+
+
+
+
+
+
+
+
+
+.in {
+    position:relative;
+    width: 100%;
+    background: rgb(235, 160, 20);
+    min-height: 25px;
+    padding: 10px 50px;
+    top: -25px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*ONDAS*/
+.ond {
+    position: absolute;
+    top: -47.5;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background: url("../img/waveA.png");
+    background-size: 1000px 100px;
+}
+.ond#ond1 {
+    z-index: 1000;
+    opacity: 0.7;
+    bottom: 0;
+    animation: animateOnd 4s linear infinite;
+}
+.ond#ond2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateOnd_02 4s linear infinite;
+}
+.ond#ond3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateOnd 3s linear infinite;
+}
+.ond#ond4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 10px;
+    animation: animateOnd_02 3s linear infinite;
+}
+@keyframes animateOnd {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateOnd_02 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+.imgg {
+  width: 500px;
+  height: 500px;
+}
+
+.hel{
+  width: 500px;
+  height: 500px;
+}

@@ -1,0 +1,87 @@
+
+
+
+
+
+/* ===== FONDO GENERAL DE LA PÁGINA ===== */
+body {
+  background: linear-gradient(to right, #f5f6f8, #e9ecef); /* fondo suave degradado */
+  font-family: Arial, sans-serif;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.container {
+  max-width: 800px; /* ancho más elegante */
+}
+
+/* ===== FORMULARIO ===== */
+form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px; /* bordes más suaves */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* sombra moderna */
+}
+
+/* ===== TÍTULOS ===== */
+h3, h5 {
+  font-weight: bold;
+  color: #333;
+}
+
+/* ===== INPUTS Y TEXTAREA ===== */
+.form-control {
+  border-radius: 10px; /* bordes redondeados */
+  padding: 12px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease; /* animación suave */
+}
+
+/* ===== EFECTO AL HACER CLICK ===== */
+.form-control:focus {
+  border-color: #f5af1a;
+  box-shadow: 0 0 8px rgba(245, 175, 26, 0.3);
+}
+
+/* ===== LABELS ===== */
+.form-label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* ===== CHECKBOX ===== */
+.form-check-input {
+  cursor: pointer;
+}
+
+.form-check-label {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* ===== BOTÓN ===== */
+.btn-enviar {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #f5af1a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* ===== EFECTO HOVER BOTÓN ===== */
+.btn-enviar:hover {
+  background-color: #e69500;
+  transform: translateY(-2px); /* pequeño efecto al pasar el mouse */
+}
+
+/* ===== LÍNEAS SEPARADORAS ===== */
+hr {
+  margin: 25px 0;
+  opacity: 0.3;
+}
+
+
+
+
